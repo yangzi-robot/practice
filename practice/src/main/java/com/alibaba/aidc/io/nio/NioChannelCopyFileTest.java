@@ -50,6 +50,7 @@ public class NioChannelCopyFileTest {
                 //翻转
                 buffer.clear();
             }
+            fosChannel.force(true);
         }  catch (Exception e) {
             e.printStackTrace();
         } finally {
