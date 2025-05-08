@@ -15,7 +15,7 @@ public class OioSocketProvider implements Runnable {
     @Override
     public void run() {
         try {
-            Socket socket = new Socket("127.0.0.1", NioDemoConfig.SOCKET_SERVER_PORT);
+            Socket socket = new Socket("127.0.0.1", 18899);
             socket.getOutputStream().write(data.getBytes());
             System.out.println("finished send socket, write in file， currentTime: : " + System.currentTimeMillis());
         } catch (Exception e) {
@@ -25,7 +25,7 @@ public class OioSocketProvider implements Runnable {
 
     public static void main(String[] args) {
         //模拟发送100个请求
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 5; i++) {
             OioSocketProvider provider = new OioSocketProvider("测试发送" + i);
             provider.run();
         }

@@ -1,7 +1,5 @@
-package com.alibaba.aidc.io.nio;
+package com.alibaba.aidc.io.nio.fileChannel;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;

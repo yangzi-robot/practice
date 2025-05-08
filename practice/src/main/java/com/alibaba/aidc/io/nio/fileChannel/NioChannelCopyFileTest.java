@@ -1,4 +1,4 @@
-package com.alibaba.aidc.io.nio;
+package com.alibaba.aidc.io.nio.fileChannel;
 
 import java.io.File;
 import java.io.FileInputStream;
